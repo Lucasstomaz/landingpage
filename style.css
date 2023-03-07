@@ -9,13 +9,25 @@
 /*navegação*/
 
 .menuNav{
-    padding: 1.5rem 2.4rem 5.3rem;
+    position: fixed;
+    
+    background-color: #ffffff;
+
+    top: 0;
+
+    padding: 1rem 4rem;
+        
+    width: 100%;
+
+    padding: 1.5rem 2.4rem 1.5rem;
     font-size: 2.5rem;
 
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .menuNav a{
@@ -38,8 +50,13 @@
 
 /*titulo*/
 
+.sec1{
+    margin-top: 10rem;
+    background-color: #ffffff;
+}
+
 .sec1 h1{
-    margin: 0 2.4rem 1.8rem;
+    margin: 2.5rem 2.4rem 1.8rem;
 
     font-weight: 400;
     font-size: 18px;
@@ -101,7 +118,7 @@ img{
     background-color: white;
     border-radius: .5rem;
     padding: 1rem;
-    margin: auto .5rem;
+    margin: 5rem .5rem;
   }
   
   .content {
@@ -154,7 +171,7 @@ img{
 h2{
     font-size: 2rem;
     text-align: center;
-    margin: 2rem 8rem;
+    margin: 6rem 8rem;
 
     color: #ff8800;
 }
@@ -192,7 +209,7 @@ h2{
 /*form*/
 
 .contato{
-    margin: 1.5rem 1.5rem;
+    margin: 1.5rem 5rem;
 }
 
 .contato h1 {
