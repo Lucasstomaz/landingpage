@@ -52,7 +52,7 @@ span{
 }
 
 .sec1 img{
-    width: 100%;
+    display: none;
 }
 
 /*conteudoprimario*/
@@ -151,10 +151,10 @@ img{
 
 /*feedback*/
 
-.feedbacks h2{
-    font-size: 1.8rem;
-    font-weight: 600;
+h2{
+    font-size: 2rem;
     text-align: center;
+    margin: 2rem 8rem;
 
     color: #ff8800;
 }
@@ -191,15 +191,10 @@ img{
 
 /*form*/
 
-.contato {
-    width: 300px;
-    margin: 2.9rem auto;
-    display: flex;
-    flex-direction: column;
-    background:#ffffff;
-    border-radius:3px; 
-    padding:1em;
+.contato{
+    margin: 1.5rem 1.5rem;
 }
+
 .contato h1 {
     font-size: 1.8rem;
     color: #ff8800;
@@ -207,24 +202,23 @@ img{
     padding-bottom: 1rem;
 }
 
-/* SUBMIT */
-.submit { width:100%; float:left; }
-.submit_btn {
+/* contato */
+.wpp-button {
     display: block;
-    padding: 5px 30px;
+    padding: .5rem 2.5rem;
     border: none;
-    outline: none;
     background-color: #ff8800;
     color: #ffffff;
     font-size: 25px;
     border-radius: 6px;
-    margin: 20px 30px 0 0 ;
+    margin: 2rem 3rem 0 0;
     cursor: pointer;
     transition: all 0.3s;
     text-decoration: none;
+    max-width: 26rem;
 
 }
-.submit_btn:hover {
+.wpp-button:hover {
     background-color: #ff7b00;
     transform: scale(1.03);
 }
@@ -270,6 +264,13 @@ footer h4{
 
 
 @media (min-width: 1024px) {
+    h2{
+        font-size: 5rem;
+        text-align: center;
+        margin: 10rem 0;
+
+        color: #ff8800;
+    }
 
     .menuNav{
         position: fixed;
@@ -284,9 +285,10 @@ footer h4{
 
     .sec1{
         display: flex;
-        margin-top: 20rem;
+        align-items: center;
+
+        margin: 10rem 10rem 0 ;
         width: 100%;
-        height: 100rem;
     }
 
     .img1{
@@ -298,6 +300,12 @@ footer h4{
     .sec1 h1{
         font-size: 3rem;
         margin: 1rem 10rem 1.8rem;
+    }
+
+    .sec1 img{
+        display: block;
+        width: 30rem;
+        margin-left: 10rem;
     }
     
     span{
@@ -313,13 +321,16 @@ footer h4{
     }
 
     #buttonMenu:hover{
-        background-color: #ff7300;
+        background-color: #d35f00;
         cursor: pointer;
+
+        background-color: #ff7b00;
+        transform: scale(1.03);
     }
 
 
     .sec2{
-        padding: 10rem 0 10rem;
+        padding: 0rem 0 10rem;
     }
 
     .sec2, 
@@ -330,5 +341,65 @@ footer h4{
         margin: 0 10rem 1.8rem;
     }
 
-    
+    .rated{
+        justify-content:space-around;
+        margin: 10rem 0 10rem;
+    }
+
+    #rate{
+        font-size: 4rem;
+        width: 100rem;
+    }
+
+    #rate span{
+        font-size: 4rem;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    /*accordeon*/
+
+    .container{
+        max-width: 80rem;
+        margin: 10rem auto;
+
+    }
+
+    .accordion_content p{
+        font-size: 2.5rem;
+    }
+
+    /*feedbacks*/
+
+    .feedbacks{
+        flex-direction: row;
+    }
+
+    /*contato*/
+
+    .contato{
+        margin: 10rem;
+    }
+
+    .contato h1, .contato p{
+        font-size: 5rem;
+        width: 100rem;
+    }
+
+    .contato span{
+        font-size: 5rem;
+    };
+
+
+    a .wpp-button {
+        max-width: 5.4rem;
+        font-size: 4rem;
+    }
+
+    footer{
+        padding: 2rem 10rem;
+    }
+
 }
